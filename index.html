@@ -39,6 +39,21 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <style type="text/css">
+      input:invalid {
+        border: 2px solid red;
+      }
+
+      input:valid {
+        border: 3px solid green;
+      }
+      textarea:invalid {
+        border: 2px solid red;
+      }
+      textarea:valid {
+        border: 3px solid green;
+      }
+    </style>
   </head>
   <body>
     <!-- Site preloader -->
@@ -55,9 +70,29 @@
           <div class="header-inner">
             <!-- Logo -->
             <div class="logo">
-              <a href="#">
-                <img src="img/logo3.png" />
-              </a>
+              <!-- <a href="#"> -->
+              <picture>
+                <source
+                  media="(max-width: 360px)"
+                  srcset="img/logo/logo3.png"
+                />
+                <source
+                  media="(max-width: 414px)"
+                  srcset="img/logo/logo3.png"
+                />
+                <source
+                  media="(max-width: 601px)"
+                  srcset="img/logo/logo2.png"
+                />
+                <source
+                  media="(max-width: 1024px)"
+                  srcset="img/logo/logo1.png"
+                />
+                <img src="img/logo/logo1.png" alt="s3p" />
+              </picture>
+
+              <!-- <img src="img/logo3.png" /> -->
+              <!-- </a> -->
             </div>
             <!-- End Logo -->
 
@@ -87,15 +122,462 @@
         <!--End Header-->
 
         <!--Intro Section-->
-        <section id="intro" class="intro-fullscreen">
-          <!--Static Hero-->
+        <section id="intro">
+          <!--Slider Hero-->
+          <div class="tp-banner-container">
+            <div class="intro-tp-banner">
+              <ul>
+                <!-- SLIDE  -->
+                <li
+                  class="dark-bg"
+                  data-transition="fade"
+                  data-slotamount="5"
+                  data-masterspeed="700"
+                >
+                  <!-- MAIN IMAGE -->
+                  <picture>
+                    <source
+                      media="(max-width: 360px)"
+                      srcset="img/sl/ssl1.jpg"
+                    />
+                    <source
+                      media="(max-width: 414px)"
+                      srcset="img/sl/msl1.jpg"
+                    />
+                    <source
+                      media="(max-width: 601px)"
+                      srcset="img/sl/lsl1.jpg"
+                    />
+                    <source
+                      media="(max-width: 800px)"
+                      srcset="img/sl/xlsl1-800.jpg"
+                    />
+                    <source
+                      media="(max-width: 1024px)"
+                      srcset="img/sl/xlsl1.jpg"
+                    />
+                    <img
+                      src="img/sl/xxlsl1.jpg"
+                      alt="school buddy"
+                      data-bgfit="cover"
+                      data-bgposition="top center"
+                      data-bgrepeat="no-repeat"
+                    />
+                  </picture>
 
-          <!-- End Static Hero-->
+                  <!-- <img
+                    src="img/full/sl1.jpg"
+                    alt="slidebg1"
+                    data-bgfit="cover"
+                    data-bgposition="top center"
+                    data-bgrepeat="no-repeat"
+                  /> -->
+
+                  <!-- LAYER NR. 1 -->
+                  <div
+                    class="tp-caption lfb ltt tp-resizeme"
+                    data-x="center"
+                    data-hoffset="0"
+                    data-y="center"
+                    data-voffset="-125"
+                    data-speed="600"
+                    data-start="500"
+                    data-easing="Power4.easeOut"
+                    data-splitin="none"
+                    data-splitout="none"
+                    data-elementdelay="0.01"
+                    data-endelementdelay="0.1"
+                    data-endspeed="500"
+                    data-endeasing="Power4.easeIn"
+                    style="
+                      z-index: 2;
+                      max-width: auto;
+                      max-height: auto;
+                      white-space: nowrap;
+                    "
+                  >
+                    <!-- <img src="img/t-logo1.png" alt="logo" /> -->
+                  </div>
+
+                  <!-- LAYER NR. 2 -->
+                  <h2
+                    class="tp-caption lfb ltt tp-resizeme sc-title"
+                    data-x="center"
+                    data-hoffset="0"
+                    data-y="center"
+                    data-voffset="-25"
+                    data-speed="600"
+                    data-start="700"
+                    data-easing="Power4.easeOut"
+                    data-splitin="none"
+                    data-splitout="none"
+                    data-elementdelay="0.01"
+                    data-endelementdelay="0.1"
+                    data-endspeed="500"
+                    data-endeasing="Power4.easeIn"
+                    style="
+                      z-index: 3;
+                      max-width: auto;
+                      max-height: auto;
+                      white-space: nowrap;
+                    "
+                  ></h2>
+
+                  <!-- LAYER NR. 3 -->
+                  <p
+                    class="tp-caption lfb ltt tp-resizeme sc-paragraph-lead"
+                    data-x="center"
+                    data-hoffset="0"
+                    data-y="center"
+                    data-voffset="40"
+                    data-speed="600"
+                    data-start="900"
+                    data-easing="Power4.easeOut"
+                    data-splitin="none"
+                    data-splitout="none"
+                    data-elementdelay="0.01"
+                    data-endelementdelay="0.1"
+                    data-endspeed="500"
+                    data-endeasing="Power4.easeIn"
+                    style="
+                      z-index: 3;
+                      max-width: auto;
+                      max-height: auto;
+                      white-space: nowrap;
+                    "
+                  >
+                    <br />
+                  </p>
+
+                  <!-- LAYER NR. 4 -->
+                  <div
+                    class="tp-caption lfb ltt tp-resizeme sc-button"
+                    data-x="center"
+                    data-hoffset="0"
+                    data-y="center"
+                    data-voffset="125"
+                    data-speed="600"
+                    data-start="1100"
+                    data-easing="Power4.easeOut"
+                    data-splitin="none"
+                    data-splitout="none"
+                    data-elementdelay="0.01"
+                    data-endelementdelay="0.1"
+                    data-endspeed="500"
+                    data-endeasing="Power4.easeIn"
+                    style="
+                      z-index: 3;
+                      max-width: auto;
+                      max-height: auto;
+                      white-space: nowrap;
+                    "
+                  >
+                    <!-- <a class="btn btn-md btn-info"
+                      >A Complete School Management System</a
+                    > -->
+                  </div>
+                </li>
+
+                <!-- SLIDE  -->
+                <li
+                  class="dark-bg"
+                  data-transition="fade"
+                  data-slotamount="5"
+                  data-masterspeed="700"
+                >
+                  <!-- MAIN IMAGE -->
+                  <picture>
+                    <source
+                      media="(max-width: 360px)"
+                      srcset="img/sl/ssl2.jpg"
+                    />
+                    <source
+                      media="(max-width: 414px)"
+                      srcset="img/sl/msl2.jpg"
+                    />
+                    <source
+                      media="(max-width: 601px)"
+                      srcset="img/sl/lsl2.jpg"
+                    />
+                    <source
+                      media="(max-width: 800px)"
+                      srcset="img/sl/xlsl2-800.jpg"
+                    />
+                    <source
+                      media="(max-width: 1024px)"
+                      srcset="img/sl/xlsl2.jpg"
+                    />
+                    <img
+                      src="img/sl/xxlsl2.jpg"
+                      alt="Faaz Medix"
+                      data-bgfit="cover"
+                      data-bgposition="top center"
+                      data-bgrepeat="no-repeat"
+                    />
+                  </picture>
+
+                  <!-- LAYER NR. 1 -->
+                  <div
+                    class="tp-caption lfb ltt tp-resizeme"
+                    data-x="center"
+                    data-hoffset="0"
+                    data-y="center"
+                    data-voffset="-125"
+                    data-speed="600"
+                    data-start="500"
+                    data-easing="Power4.easeOut"
+                    data-splitin="none"
+                    data-splitout="none"
+                    data-elementdelay="0.01"
+                    data-endelementdelay="0.1"
+                    data-endspeed="500"
+                    data-endeasing="Power4.easeIn"
+                    style="
+                      z-index: 2;
+                      max-width: auto;
+                      max-height: auto;
+                      white-space: nowrap;
+                    "
+                  >
+                    <!-- <img src="img/t-logo1.png" alt="logo" /> -->
+                  </div>
+
+                  <!-- LAYER NR. 2 -->
+                  <h2
+                    class="tp-caption lfb ltt tp-resizeme sc-title"
+                    data-x="center"
+                    data-hoffset="0"
+                    data-y="center"
+                    data-voffset="-25"
+                    data-speed="600"
+                    data-start="700"
+                    data-easing="Power4.easeOut"
+                    data-splitin="none"
+                    data-splitout="none"
+                    data-elementdelay="0.01"
+                    data-endelementdelay="0.1"
+                    data-endspeed="500"
+                    data-endeasing="Power4.easeIn"
+                    style="
+                      z-index: 3;
+                      max-width: auto;
+                      max-height: auto;
+                      white-space: nowrap;
+                    "
+                  ></h2>
+
+                  <!-- LAYER NR. 3 -->
+                  <p
+                    class="tp-caption lfb ltt tp-resizeme sc-paragraph-lead"
+                    data-x="center"
+                    data-hoffset="0"
+                    data-y="center"
+                    data-voffset="40"
+                    data-speed="600"
+                    data-start="900"
+                    data-easing="Power4.easeOut"
+                    data-splitin="none"
+                    data-splitout="none"
+                    data-elementdelay="0.01"
+                    data-endelementdelay="0.1"
+                    data-endspeed="500"
+                    data-endeasing="Power4.easeIn"
+                    style="
+                      z-index: 3;
+                      max-width: auto;
+                      max-height: auto;
+                      white-space: nowrap;
+                    "
+                  >
+                    <br />
+                  </p>
+
+                  <!-- LAYER NR. 4 -->
+                  <div
+                    class="tp-caption lfb ltt tp-resizeme sc-button"
+                    data-x="center"
+                    data-hoffset="0"
+                    data-y="center"
+                    data-voffset="125"
+                    data-speed="600"
+                    data-start="1100"
+                    data-easing="Power4.easeOut"
+                    data-splitin="none"
+                    data-splitout="none"
+                    data-elementdelay="0.01"
+                    data-endelementdelay="0.1"
+                    data-endspeed="500"
+                    data-endeasing="Power4.easeIn"
+                    style="
+                      z-index: 3;
+                      max-width: auto;
+                      max-height: auto;
+                      white-space: nowrap;
+                    "
+                  >
+                    <!-- <a class="btn btn-md btn-black">
+                      Simplify your pharmacy operations with one powerful
+                      system.</a
+                    > -->
+                  </div>
+                </li>
+
+                <!-- SLIDE  -->
+                <li
+                  class="dark-bg"
+                  data-transition="fade"
+                  data-slotamount="5"
+                  data-masterspeed="700"
+                >
+                  <!-- MAIN IMAGE -->
+                  <picture>
+                    <source
+                      media="(max-width: 360px)"
+                      srcset="img/sl/ssl3.jpg"
+                    />
+                    <source
+                      media="(max-width: 414px)"
+                      srcset="img/sl/msl3.jpg"
+                    />
+                    <source
+                      media="(max-width: 601px)"
+                      srcset="img/sl/lsl3.jpg"
+                    />
+                    <source
+                      media="(max-width: 800px)"
+                      srcset="img/sl/xlsl3-800.jpg"
+                    />
+                    <source
+                      media="(max-width: 1024px)"
+                      srcset="img/sl/xlsl3.jpg"
+                    />
+                    <img
+                      src="img/sl/xxlsl3.jpg"
+                      alt="Faaz Medix"
+                      data-bgfit="cover"
+                      data-bgposition="top center"
+                      data-bgrepeat="no-repeat"
+                    />
+                  </picture>
+
+                  <!-- LAYER NR. 1 -->
+                  <div
+                    class="tp-caption lfb ltt tp-resizeme"
+                    data-x="center"
+                    data-hoffset="0"
+                    data-y="center"
+                    data-voffset="-125"
+                    data-speed="600"
+                    data-start="500"
+                    data-easing="Power4.easeOut"
+                    data-splitin="none"
+                    data-splitout="none"
+                    data-elementdelay="0.01"
+                    data-endelementdelay="0.1"
+                    data-endspeed="500"
+                    data-endeasing="Power4.easeIn"
+                    style="
+                      z-index: 2;
+                      max-width: auto;
+                      max-height: auto;
+                      white-space: nowrap;
+                    "
+                  >
+                    <!-- <img src="img/t-logo1.png" alt="logo" /> -->
+                  </div>
+
+                  <!-- LAYER NR. 2 -->
+                  <h2
+                    class="tp-caption lfb ltt tp-resizeme sc-title"
+                    data-x="center"
+                    data-hoffset="0"
+                    data-y="center"
+                    data-voffset="-25"
+                    data-speed="600"
+                    data-start="700"
+                    data-easing="Power4.easeOut"
+                    data-splitin="none"
+                    data-splitout="none"
+                    data-elementdelay="0.01"
+                    data-endelementdelay="0.1"
+                    data-endspeed="500"
+                    data-endeasing="Power4.easeIn"
+                    style="
+                      z-index: 3;
+                      max-width: auto;
+                      max-height: auto;
+                      white-space: nowrap;
+                    "
+                  ></h2>
+
+                  <!-- LAYER NR. 3 -->
+                  <p
+                    class="tp-caption lfb ltt tp-resizeme sc-paragraph-lead"
+                    data-x="center"
+                    data-hoffset="0"
+                    data-y="center"
+                    data-voffset="40"
+                    data-speed="600"
+                    data-start="900"
+                    data-easing="Power4.easeOut"
+                    data-splitin="none"
+                    data-splitout="none"
+                    data-elementdelay="0.01"
+                    data-endelementdelay="0.1"
+                    data-endspeed="500"
+                    data-endeasing="Power4.easeIn"
+                    style="
+                      z-index: 3;
+                      max-width: auto;
+                      max-height: auto;
+                      white-space: nowrap;
+                    "
+                  ></p>
+
+                  <!-- LAYER NR. 4 -->
+                  <div
+                    class="tp-caption lfb ltt tp-resizeme sc-button"
+                    data-x="center"
+                    data-hoffset="0"
+                    data-y="center"
+                    data-voffset="125"
+                    data-speed="600"
+                    data-start="1100"
+                    data-easing="Power4.easeOut"
+                    data-splitin="none"
+                    data-splitout="none"
+                    data-elementdelay="0.01"
+                    data-endelementdelay="0.1"
+                    data-endspeed="500"
+                    data-endeasing="Power4.easeIn"
+                    style="
+                      z-index: 3;
+                      max-width: auto;
+                      max-height: auto;
+                      white-space: nowrap;
+                    "
+                  >
+                    <!-- <a class="btn btn-md btn-black"
+                      >The best way to run your shop smoothly and
+                      successfully.</a
+                    > -->
+                  </div>
+                </li>
+
+                <!-- SLIDE  -->
+
+                <!-- SLIDE  -->
+              </ul>
+              <div class="tp-bannertimer"></div>
+            </div>
+          </div>
+          <!-- End Slider Hero-->
         </section>
+
         <!-- End Intro Section-->
 
         <!-- About Section -->
-        <section id="about" class="section-padding1 black-bg">
+        <section id="about" class="section-padding black-bg">
           <div class="container mb-10">
             <div class="row text-center">
               <div
@@ -103,9 +585,59 @@
                 data-wow-delay="0.2s"
                 data-wow-duration="1s"
               >
-                <img src="img/ab33.png" alt="school Buddy" />
+                <picture>
+                  <source
+                    media="(max-width: 360px)"
+                    srcset="img/sl/ab33-275.png"
+                  />
+                  <source
+                    media="(max-width: 414px)"
+                    srcset="img/sl/ab33-355.png"
+                  />
+                  <source
+                    media="(max-width: 601px)"
+                    srcset="img/sl/ab33-355.png"
+                  />
+
+                  <source
+                    media="(max-width: 800px)"
+                    srcset="img/sl/ab33-335.png"
+                  />
+                  <source
+                    media="(max-width: 1024px)"
+                    srcset="img/sl/ab33-455.png"
+                  />
+                  <img src="img/sl/ab33.png" alt="about img" />
+                </picture>
+                <!-- <img src="img/ab33.png" alt="school Buddy" /> -->
+
                 <div class="spacer-60"></div>
-                <img src="img/ab02.png" alt="faaz ShopMate" />
+
+                <picture>
+                  <source
+                    media="(max-width: 360px)"
+                    srcset="img/sl/ab02-275.png"
+                  />
+                  <source
+                    media="(max-width: 414px)"
+                    srcset="img/sl/ab02-355.png"
+                  />
+                  <source
+                    media="(max-width: 601px)"
+                    srcset="img/sl/ab02-355.png"
+                  />
+
+                  <source
+                    media="(max-width: 800px)"
+                    srcset="img/sl/ab02-335.png"
+                  />
+                  <source
+                    media="(max-width: 1024px)"
+                    srcset="img/sl/ab02-455.png"
+                  />
+                  <img src="img/sl/ab02.png" alt="about img" />
+                </picture>
+                <!-- <img src="img/ab02.png" alt="faaz ShopMate" /> -->
               </div>
               <div
                 class="col-md-6 wow fadeIn"
@@ -116,9 +648,9 @@
                 <h6 class="page-title-alt text-warning mb-10">
                   S3P: Your Trusted Partner in Software Development
                 </h6>
-                <h2 class="page-title1 text-info mb-25">
+                <h4 class="page-title1 text-info mb-25">
                   Seemanchal Software Solution Provider
-                </h2>
+                </h4>
                 <p class="mb-35 text-md-left large">
                   At <strong>S3P</strong> we specialize in developing software
                   solutions to meet your business requirements. Whether you're
@@ -153,7 +685,7 @@
         <!-- End About Section -->
 
         <!-- About Section 2 -->
-        <section id="about2" class="section-padding-ab1 text-center black-bg">
+        <section id="about2" class="section-padding-ab text-center black-bg">
           <div class="container">
             <div class="row">
               <div
@@ -225,7 +757,7 @@
         <hr />
 
         <!--Latest Work Section-->
-        <section id="latest-work" class="section-padding1 black-bg">
+        <section id="latest-work" class="section-padding black-bg">
           <div class="container text-center">
             <h3 class="page-title text-info">Our Latest Products</h3>
           </div>
@@ -395,7 +927,7 @@
         <!-- Action Box Section -->
 
         <!-- Action Box Section -->
-
+        <hr />
         <!-- Service Section -->
         <section id="service" class="section-padding black-bg">
           <div class="container mb-60 text-center">
@@ -1042,17 +1574,29 @@
             </div>
             <div class="row">
               <div class="col-md-6">
-                <form id="contact" class="row contact-form" role="form">
-                  <div class="col-md-12 text-center">
-                    <h5 class="successContent">
-                      <i class="fa fa-check left" style="color: #17a2b8"></i
-                      >Your message has been sent successfully.
-                    </h5>
-                    <h5 class="errorContent" style="color: #c52f45">
-                      <i class="fa fa-exclamation-circle left"></i>There was a
-                      problem validating the form please check!
-                    </h5>
+                <div class="col-md-12 text-center">
+                  <div
+                    id="sending-message"
+                    style="display: none"
+                    class="text-info"
+                  >
+                    Please wait, Your message is being sent...
                   </div>
+                  <div
+                    id="success-message"
+                    style="display: none"
+                    class="text-success"
+                  >
+                    <i class="fa fa-check left" style="color: white"></i>
+                    Your message has been sent. Thank you!
+                  </div>
+                </div>
+                <form
+                  id="contact"
+                  name="submit-to-google-sheet"
+                  class="row contact-form"
+                  role="form"
+                >
                   <div class="col-md-12">
                     <div class="form-field-wrapper">
                       <i
@@ -1061,11 +1605,12 @@
                       ></i>
                       <input
                         class="input-md form-full"
-                        disabled
-                        id="form-name"
+                        id="name"
                         type="text"
-                        name="form-name"
+                        name="name"
                         placeholder="Please Enter Your Name"
+                        minlength="4"
+                        maxlength="50"
                         required
                       />
                     </div>
@@ -1076,29 +1621,14 @@
                       ></i>
                       <input
                         class="input-md form-full"
-                        disabled
-                        id="form-email"
+                        id="email"
                         type="email"
-                        name="form-email"
+                        name="email"
                         placeholder="Please Enter Your Email"
                         required
                       />
                     </div>
-                    <div class="form-field-wrapper">
-                      <i
-                        class="fa fa-pencil"
-                        style="font-size: 30px; color: #8a3eb7"
-                      >
-                      </i>
-                      <input
-                        class="input-md form-full"
-                        disabled
-                        id="form-subject"
-                        type="text"
-                        name="form-subject"
-                        placeholder=" Your Subject"
-                      />
-                    </div>
+                    <div class="form-field-wrapper"></div>
                   </div>
                   <div class="col-md-12 mb-0">
                     <div class="form-field-wrapper">
@@ -1108,19 +1638,20 @@
                       ></i>
                       <textarea
                         class="input-md form-full"
-                        disabled
-                        id="form-message"
+                        id="message"
                         rows="7"
-                        name="form-message"
+                        name="message"
                         placeholder="Your Message"
+                        minlength="20"
+                        maxlength="200"
                         required
                       ></textarea>
                     </div>
                   </div>
                   <div class="col-md-12 text-center">
+                    <div class="spacer-30"></div>
                     <button
                       class="btn btn-primary btn-md"
-                      disabled
                       type="submit"
                       id="mform-subit"
                       name="submit"
@@ -1170,6 +1701,7 @@
                       >
                       <br />
                       <a style="color: white">Call : +91 8010528990</a>
+                      <br />
                       <a
                         href="mailto:er.zakiahmad@gmail.com"
                         style="color: white"
@@ -1341,7 +1873,38 @@
       src="js/plugins/jquery.validate.min.js"
       type="text/javascript"
     ></script>
-    <script src="js/contact-form.js" type="text/javascript"></script>
+    <!-- <script src="js/contact-form.js" type="text/javascript"></script> -->
+
+    <script>
+      var scriptURL =
+        "https://script.google.com/macros/s/AKfycbx1eavkqjbgNGGs4_9WUfeE_oy49fk-CD_sJ7gAH7T4K9t3x0Hnajcnbme_AFYxwy7y/exec";
+      var form = document.forms["submit-to-google-sheet"];
+      var successMessage = document.getElementById("success-message");
+      var sendingMessage = document.getElementById("sending-message");
+
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+        form.style.display = "none";
+        sendingMessage.style.display = "block"; // show the sending message
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then(function (response) {
+            console.log("Success!", response);
+            sendingMessage.style.display = "none"; // hide the sending message
+            successMessage.style.display = "block"; // show the success message
+            form.style.display = "block"; // show the form again
+            setTimeout(() => {
+              window.scrollTo(0, 0);
+            }, 4000);
+            // window.location.reload();
+          })
+          .catch(function (error) {
+            console.error("Error!", error.message);
+            form.style.display = "block"; // show the form again in case of error
+            sendingMessage.style.display = "none"; // hide the sending message
+          });
+      });
+    </script>
+
     <!-- <script
       src="https://maps.googleapis.com/maps/api/js?sensor=false"
       type="text/javascript">
@@ -1350,7 +1913,7 @@
     <script src="js/theme.js" type="text/javascript"></script>
 
     <!-- Background Slideshow -->
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
       $.backstretch(
         ["img/full/sl1.jpg", "img/full/sl2.jpg", "img/full/sl3.jpg"],
         {
@@ -1358,6 +1921,6 @@
           duration: 6000,
         }
       );
-    </script>
+    </script> -->
   </body>
 </html>
